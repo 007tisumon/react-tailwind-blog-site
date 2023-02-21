@@ -1,0 +1,13 @@
+.heading{
+   
+width: 30%;
+height: 2px;
+background-color: blue;
+margin: 0 auto;
+
+}
+.modalmg img{
+    vertical-align: inherit;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}

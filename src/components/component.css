@@ -1,0 +1,84 @@
+.aboutRight::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid rgba(128, 128, 128,0.2) ;
+}
+.about65::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid rgba(128, 128, 128,0.2) ;
+}
+@media (max-width: 767px) {
+    .aboutBottom::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+       width: 100%;
+        height: 100%;
+        border-bottom: 1px solid rgba(128, 128, 128,0.2)!important ;
+    }
+    .about65::after{
+        border-left: none;
+    }
+    
+}
+@media  (min-width:768px) {
+    .aboutRight::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-left: 1px solid rgba(128, 128, 128,0.2) ;
+    }
+    
+}
+.protfolio_img{
+    transition: all 1s ease;
+}
+.protfolio_img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.protfolio_img:hover::before{
+    opacity: 1;
+}
+.protfolio_content{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   color: white;
+  
+}
+.protfolio_img:hover .protfolio_content{
+    opacity: 1;
+}
+.btn{
+    @apply text-lg font-bold active:border-b-2 border-blue-400 focus:border-b-2
+}
+.btn .active{
+    @apply text-blue-400
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#root{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    @apply text-gray1
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex-center{
+    @apply flex justify-center items-center
+}
+.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+}
+.bigtext::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    @apply tracking-wide leading-[2rem]
+}
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
